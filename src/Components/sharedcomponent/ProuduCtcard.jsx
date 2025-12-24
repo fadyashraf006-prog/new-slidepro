@@ -12,10 +12,6 @@ export default function ProuduCtcard({ title, price, image, id }) {
 
 
 
-    useEffect(() => {
-
-
-    }, [])
 
     return <>
 

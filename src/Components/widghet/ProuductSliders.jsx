@@ -20,9 +20,9 @@ export default function ProuductSliders({products}) {
   spaceBetween={20}
    modules={[Navigation, Pagination, Scrollbar, A11y ,EffectFade ,Autoplay]}
 
-  autoplay={{  delay: 500}}
+  autoplay={{  delay: 800}}
   loop={true}
-  speed={800}
+  speed={2000}
   
   
   slidesPerView={1}
