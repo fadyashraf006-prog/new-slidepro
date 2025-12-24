@@ -1,6 +1,6 @@
 import { UserContext } from "../assets/context/UserContext";
 import { useContext } from "react";
-import ProuduCtcard from "../Components/sharedcomponent/Prouductcard";
+import ProductCard from "../Components/sharedcomponent/ProductCard";
 
 
 
@@ -20,7 +20,7 @@ export default function Store() {
     <div className="container mx-auto  grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mt-5 ">
 
 
-      {products && products.map((product, index) => <div key={index} className='h-200 mb-4' ><ProuduCtcard {...product} /></div>)}
+      {products && products.map((product, index) => <div key={index} className='h-200 mb-4' ><ProductCard {...product} /></div>)}
 
 
 

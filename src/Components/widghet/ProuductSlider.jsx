@@ -1,6 +1,6 @@
 import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import ProuduCtcard from '../sharedcomponent/Prouductcard';
+import ProductCard from '../sharedcomponent/ProductCard';
 import { Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay  } from 'swiper/modules';
  import 'swiper/css/autoplay';
 
@@ -8,7 +8,7 @@ import { Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay  } from '
 
 
 
-export default function ProuductSliders({products}) {
+export default function ProductSlider({products}) {
 
 
 
@@ -51,7 +51,7 @@ export default function ProuductSliders({products}) {
   
   >
   
-  {products&&products.map((product,index) => <SwiperSlide key={index} >< ProuduCtcard  {...product} /></SwiperSlide>)}   
+  {products&&products.map((product,index) => <SwiperSlide key={index} >< ProductCard  {...product} /></SwiperSlide>)}   
   
   
   </Swiper>

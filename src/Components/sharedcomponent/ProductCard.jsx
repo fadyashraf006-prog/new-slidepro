@@ -4,7 +4,7 @@ import { Link } from 'react-router'
 
 
 
-export default function ProuduCtcard({ title, price, image, id }) {
+export default function ProductCard({ title, price, image, id }) {
 
   
   
@@ -28,7 +28,7 @@ export default function ProuduCtcard({ title, price, image, id }) {
                     <h2 className='p-4 text-cyan-950 text-2xl'>{title.slice(0, 20)}{title.length > 20 && '...'} </h2>
                     <h3 className='text-gray-400'>${price}</h3>
                     <div className='flex flex-col md:flex-row  gap-3  mb-4 justify-center items-center'>
-                        <button onClick={()=>addToCardHandler(id)} className='bg-blue-900 text-amber-50 border rounded-lg  p-2 mt-3  '>Add to card</button>
+                        <button  className='bg-blue-900 text-amber-50 border rounded-lg  p-2 mt-3  '>Add to card</button>
                         <Link to={`/store/product/view/${id}`} className='bg-blue-200 hover:bg-blue-800 border rounded-lg p-2 cursor-pointer mt-3 '>View Product</Link>
                     </div>
 
